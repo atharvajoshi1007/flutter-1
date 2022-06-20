@@ -1350,7 +1350,7 @@ class _WidgetsAppState extends State<WidgetsApp> with WidgetsBindingObserver {
   Route<dynamic>? _onGenerateRoute(RouteSettings settings) {
     final String? name = settings.name;
     final WidgetBuilder? pageContentBuilder = name == Navigator.defaultRouteName && widget.home != null
-        ? (BuildContext context) => widget.home!
+          ? (BuildContext context) => widget.home!
         : widget.routes![name];
 
     if (pageContentBuilder != null) {
